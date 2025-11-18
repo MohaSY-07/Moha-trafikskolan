@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* HEADER / الرءس */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: white;
+}
+
+.Logo {
+    width: 120px;
+  }
+
+
+.book-btn {
+    background: blue;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+}
