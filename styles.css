@@ -1,36 +1,51 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif
     background-color: white;
     margin: 0;
     padding: 0;
   }
   
-  header {
+header {
     background-color: lightblue;
     color: white;
     padding: 20px;
     text-align: center;
   }
   
-  .logo {
+.logo {
     width: 80px;
-    float: left;
+    float: left;  
+    
   }
   
-  nav ul {
+nav ul {
     list-style-type: none;
     padding: 0;
     
   }
   
-  nav ul li {
+nav ul li {
     display: inline-block;
     margin: 0 10px;
     
   }
   
-  nav ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
     background-color: blue;
   }
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.centered {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
