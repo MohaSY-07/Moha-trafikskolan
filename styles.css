@@ -162,6 +162,37 @@ nav ul li a {
   color: white;
 }
 
+.footer {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer div {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.social-btn {
+  display: inline-block;
+  background: #00a0e4;
+  padding: 8px 14px;
+  border-radius: 6px;
+  margin-right: 10px;
+  margin-top: 5px;
+  transition: 0.3s;
+}
+
+.social-btn:hover {
+  background: #0056b3;
+}
+
+
 @media (max-width: 700px) {
   .kurs-info-box {
     text-align: center;
