@@ -7,19 +7,53 @@
     <title>Bokning</title>
 </head>
 <body>
-    <header>
-        <img src="assets/Logo.png" class="logo">
-        <nav>
-          <ul>
+  <header>
+    <img src="assets/Logo.png" class="logo">
+    <nav>
+        <ul class="nav-links">
             <li><a href="index.html">Hem</a></li>
             <li><a href="Kurser.html">Kurser</a></li>
             <li><a href="Bokning.html">Bokning</a></li>            
-          </ul>
-        </nav>
-      </header>
+        </ul>
+    </nav>
+</header>
 
+    <section class="bokning-container">
+        <h2>Boka tid</h2>
+        <p>Fyll i uppgifterna nedan så hör vi av oss så snart vi kan.</p>
 
-      <footer class="footer">
+        <form class="bokning-form" action="#" method="POST">
+            <label for="namn">Namn*</label>
+            <input type="text" id="namn" name="namn" required>
+
+            <label for="telefon">Telefonnummer*</label>
+            <input type="tel" id="telefon" name="telefon" required>
+
+            <label for="mail">E-post*</label>
+            <input type="email" id="mail" name="mail" required>
+
+            <label for="val">Kurs eller paket*</label>
+            <select id="val" name="val" required>
+                <option value="">Välj...</option>
+                <option>Handledarkurs</option>
+                <option>Riskutbildning del 1</option>
+                <option>Riskutbildning del 2</option>
+                <option>Körpaket 5</option>
+                <option>Körpaket 10</option>
+                <option>Körpaket 20</option>
+            </select>
+
+            <label for="datum">Önskat datum*</label>
+            <input type="date" id="datum" name="datum" required>
+
+            <label for="meddelande">Meddelande (frivilligt)</label>
+            <textarea id="meddelande" name="meddelande" rows="4"></textarea>
+
+            <button type="submit" class="bokning-btn">Skicka</button>
+        </form>
+    </section>
+
+    <footer class="footer">
         <!-- About -->
         <div class="about">
           <h3>Om Oss</h3>
@@ -51,7 +85,7 @@
         <div class="copy">
           <p>&copy; 2025 Skapad av Mohamad.</p>
         </div>
-      </footer>
-    
+    </footer>
+
 </body>
 </html>

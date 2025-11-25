@@ -1,58 +1,56 @@
 body {
-   font-family: "Kirang Haerang", system-ui;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-  }
-  
+  font-family: "Kirang Haerang", system-ui;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
 header {
-    background-color: lightblue;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
+  background-color: lightblue;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
 .logo {
-    width: 80px;
-    float: left;  
-    
-  }
-  
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    
-  }
-  
-nav ul li {
-    display: inline-block;
-    margin: 0 10px;
-    
-  }
-  
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    background-color: blue;
-    border-radius: 20px 20px 20px 20px;
-    padding: 10px 20px;
-    border: 4px solid black;
-    
-    
-  }
+  width: 80px;
+  float: left;  
+}
+
+
+nav ul, .nav-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li, .nav-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a, .nav-links li a {
+  color: white;
+  text-decoration: none;
+  background-color: blue;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: 4px solid black;
+}
+
 
 .container {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
+  position: relative;
+  text-align: center;
+  color: white;
+}
 
 .centered {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 .kurser_header {
   text-align: center;
@@ -98,6 +96,7 @@ nav ul li a {
   text-decoration: none;
 }
 
+
 .tid {
   width: auto;
   margin-top: 30px;
@@ -116,13 +115,8 @@ nav ul li a {
   font-size: 20px;
   margin: 5px 0;
   justify-content: space-between;
-  
 }
 
-.foter {
-  text-align: center; 
-  font-weight: 500;
-}
 .kurser-info {
   width: 85%;
   margin: auto;
@@ -162,6 +156,7 @@ nav ul li a {
   color: white;
 }
 
+
 .footer {
   padding: 30px;
   display: flex;
@@ -192,6 +187,7 @@ nav ul li a {
   background: #0056b3;
 }
 
+
 .media_part {
   text-align: center;
   padding: 40px 20px;
@@ -211,18 +207,135 @@ nav ul li a {
 }
 
 
+.bokning-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #00a0e4;
+  border: 4px solid black;
+  border-radius: 18px;
+  text-align: center;
+  color: white;
+}
+
+.bokning-container h2 {
+  margin-bottom: 10px;
+}
+
+.bokning-container p {
+  margin-bottom: 25px;
+  font-size: 17px;
+}
+
+.bokning-form {
+  text-align: left;
+}
+
+.bokning-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.bokning-form input,
+.bokning-form select,
+.bokning-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.bokning-btn {
+  background: black;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 18px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+}
+
+.bokning-btn:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
+}
+
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  float: right;
+  margin-top: 20px;
+}
+
 
 @media (max-width: 700px) {
-  .kurs-info-box {
-    text-align: center;
+  .menu-icon {
+      display: block;
+  }
+
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      background-color: lightblue;
+      margin-top: 10px;
+      border-top: 2px solid black;
+  }
+
+  .nav-links li {
+      margin: 15px 0;
+  }
+
+
+
+  .logo {
+      float: none;
+      display: block;
+      margin: 0 auto;
   }
 }
 
 
 @media (max-width: 601px) {
-  
   .kurser {
       grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .kurs-info-box {
+      text-align: center;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .bokning-container {
+      padding: 15px;
+  }
+  .bokning-btn {
+      width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .videos-container iframe {
+      width: 100%;
+      height: 180px;
   }
 }
 
@@ -234,3 +347,48 @@ nav ul li a {
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: #121212;
+      color: white;
+  }
+
+  header {
+      background-color: #1f1f1f;
+  }
+
+  nav ul li a, .nav-links li a {
+      background-color: #333;
+      border-color: white;
+      color: white;
+  }
+
+  .kurser-box .top,
+  .kurs-info-box,
+  .bokning-container,
+  .tid {
+      background-color: #1f1f1f;
+      border-color: white;
+  }
+
+  .kurser-box a,
+  .kurs-btn,
+  .bokning-btn,
+  .social-btn {
+      background-color: #333;
+      color: white;
+      border-color: white;
+  }
+
+  .kurser-box a:hover,
+  .kurs-btn:hover,
+  .bokning-btn:hover,
+  .social-btn:hover {
+      background-color: white;
+      color: black;
+  }
+
+  .media_part {
+      color: white;
+  }
+}
